@@ -23,6 +23,7 @@ function MovieCounter() {
       <button onClick={handleCLickAdd}>Add Movie</button>
       <button onClick={handleCLickRemove}>Remove Movie</button>
       <h3>Number of Movies: {count}</h3>
+      <h1>Hi I am MOTTUQE</h1>
       <MovieDisplay movies={count}></MovieDisplay>
     </div>
   )
