@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-
+import { Button } from 'bootstrap';
 function App() {
   return (
     <div className="App">
@@ -20,9 +20,10 @@ function MovieCounter() {
   const handleCLickRemove = () => setCount(count - 1)
   return (
     <div>
+      <h1>My Favorite Movies</h1>
       <button onClick={handleCLickAdd}>Add Movie</button>
       <button onClick={handleCLickRemove}>Remove Movie</button>
-      <h3>Number of Movies: {count}</h3>
+      <h3 className='bg-success'>Number of Movies: {count}</h3>
       <h1>Hi I am MOTTUQE</h1>
       <MovieDisplay movies={count}></MovieDisplay>
     </div>
